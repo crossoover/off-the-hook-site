@@ -1,0 +1,94 @@
+.sliderModal {
+   top: 0;
+   left: 0;
+   position: fixed;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100vw;
+   height: 100vh;
+   background: white;
+   z-index: 100000;
+   padding: 200px 300px;
+
+   &__image {
+      width: 50%;
+
+      &_illustration {
+         width: 100%;
+      }
+   }
+
+   &__info {
+      width: 50%;
+      height: 600px;
+      padding-left: 150px;
+
+      &_content {
+         width: 100%;
+         height: 60px;
+         border-bottom: 1px solid rgb(90, 90, 90);
+         display: flex;
+         justify-content: space-between;
+         padding-left: 2px;
+
+         &_text {
+            font-size: 18px;
+            color: rgb(50, 50, 50);
+            font-weight: bold;
+         }
+
+         &_instagram {
+            width: 18px;
+            height: 17px;
+         }
+      }
+   }
+
+   &__close {
+      width: 100px;
+      height: 100px;
+      font-size: 55px;
+      color: rgb(50, 50, 50);
+      transform: rotate(45deg);
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: transparent;
+      cursor: pointer;
+      transition-delay: 0.7s;
+
+      &:hover {
+         transform: rotate(135deg);
+         transition-delay: 0s;
+      }
+   }
+
+   &__previous {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      left: 30px;
+      cursor: pointer;
+      background: white;
+
+      &_image {
+         width: 100%;
+         transform: rotate(90deg);
+      }
+   }
+
+   &__next {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      right: 30px;
+      cursor: pointer;
+      background: white;
+
+      &_image {
+         width: 100%;
+         transform: rotate(-90deg);
+      }
+   }
+}

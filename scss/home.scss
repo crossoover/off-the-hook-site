@@ -1,0 +1,514 @@
+.home {
+   width: 1380px;
+   margin: 0 auto;
+
+   &__illustration {
+      &_number {
+         box-sizing: border-box;
+         position: absolute;
+         font-size: 50px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         width: 70px;
+         height: 70px;
+         background: rgb(166, 130, 74);
+         color: white;
+      }
+   }
+
+   &__illustration_1 {
+      transform: translateY(80px);
+
+      &_picture {
+         width: 100%;
+
+         &_mobile {
+            display: none;
+         }
+      }
+
+      &_text {
+         position: absolute;
+         transform: translate(200px, -620px);
+         color: white;
+         width: 300px;
+
+         &-main {
+            font-size: 90px;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+         }
+
+         &-secondary {
+            font-size: 42px;
+            width: 500px;
+         }
+      }
+   }
+
+   &__illustration_2 {
+      display: flex;
+      justify-content: center;
+
+      &_picture {
+         width: 900px;
+      }
+
+      &_number {
+         transform: translate(440px, 130px);
+      }
+   }
+
+   &__illustration_3 {
+
+      &_picture {
+         width: 100%;
+
+         &_mobile {
+            display: none;
+         }
+      }
+
+      &_number {
+         transform: translate(280px, -20px);
+      }
+   }
+
+   &__illustration_4 {
+      transform: translate(250px, -40px);
+
+      &_picture {
+         width: 1000px;
+      }
+
+      &_number {
+         transform: translate(550px, -20px);
+      }
+   }
+
+   &__illustration_post {
+      width: 400px;
+      height: 400px;
+      background: white;
+      padding: 40px 70px;
+      position: absolute;
+      z-index: 99;
+
+      &-heading {
+         line-height: 1em;
+         font-size: 50px;
+         width: 100px;
+         color: rgb(50, 50, 50);
+      }
+
+      &-description {
+         margin-top: 30px;
+         line-height: 1.5em;
+         width: 230px;
+         font-size: 14px;
+         color: rgb(50, 50, 50);
+      }
+
+      &-button {
+         font-size: 18px;
+         color: white;
+         width: 170px;
+         height: 45px;
+         background: rgb(166, 130, 74);
+         transition: 0.3s;
+         cursor: pointer;
+         font-weight: bold;
+
+         &:hover {
+            background: rgb(111, 87, 49);
+         }
+
+
+      }
+   }
+
+   &__illustration_1_post {
+      transform: translate(170px, -650px);
+
+      &-button {
+         transform: translate(190px, 5px);
+      }
+   }
+
+   &__illustration_2_post {
+      transform: translate(820px, -40px);
+
+      &-button {
+         transform: translate(-20px, 50px);
+
+         &_link {
+            color: white;
+         }
+      }
+   }
+
+   &__illustration_3_post {
+      transform: translate(290px, -320px);
+   }
+
+   &__illustration_form {
+      display: flex;
+      flex-direction: column;
+      transform: translate(750px, -135px);
+
+      &_input {
+         width: 280px;
+         height: 50px;
+         border: 1px solid black;
+         border-radius: 0px;
+         padding: 15px;
+         resize: none;
+         margin-top: 7px;
+
+         &_textarea {
+            height: 120px;
+         }
+
+         &::placeholder {
+            color: rgb(50, 50, 50);
+         }
+
+         &:hover,
+         &:active {
+            border: 3px solid black;
+            padding-left: 13px;
+         }
+      }
+
+      &_button {
+         width: 100px;
+         font-size: 18px;
+         color: rgb(166, 130, 74);
+         background: transparent;
+         cursor: pointer;
+         font-weight: bold;
+         margin: 12px 0 0 200px;
+      }
+   }
+
+   &__instagram {
+      text-align: center;
+      color: rgb(50, 50, 50);
+
+      &_text {
+         letter-spacing: 2px;
+         font-weight: 100;
+         font-size: 12px;
+      }
+
+      &_profile {
+         font-size: 25px;
+         font-weight: bold;
+         margin-top: 5px;
+      }
+   }
+
+   &__subscribe {
+      display: flex;
+      justify-content: center;
+      margin-top: 100px;
+      box-sizing: border-box;
+
+      &_heading {
+         font-size: 42px;
+         font-weight: bold;
+         color: rgb(50, 50, 50);
+      }
+
+      &_email-input {
+         &::placeholder {
+            font-size: 15px;
+            color: rgb(50, 50, 50);
+         }
+
+         &:hover {
+            border-bottom: 3px solid rgb(50, 50, 50);
+         }
+
+         border-radius: 0px;
+         margin-left: 150px;
+         padding: 10px 50px 10px 20px;
+         border-bottom: 1px solid rgb(50, 50, 50);
+      }
+
+      &_button {
+         margin-left: 50px;
+         background: transparent;
+         cursor: pointer;
+         color: rgb(166, 130, 74);
+         font-size: 18px;
+         font-weight: bold;
+         transition: 0.3s;
+
+         &:hover {
+            color: rgb(50, 50, 50);
+         }
+      }
+   }
+}
+
+
+@media screen and (max-width:426px) {
+
+   // * {
+   //    transform: translate(0, 0);
+   // }
+
+   .home {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      overflow-x: hidden;
+
+      &__subscribe {
+         flex-direction: column;
+         justify-content: start;
+         padding: 0;
+         height: 300px;
+
+         &_heading {
+            font-size: 28px;
+            margin: 0 auto;
+         }
+
+         &_email-input {
+            width: 90%;
+            transform: translate(0, 0);
+            padding: 15px 30px;
+            margin: 50px auto 20px;
+
+            &::placeholder {
+               font-size: 16px;
+               font-weight: bold;
+               color: rgb(50, 50, 50);
+            }
+
+            &:hover {
+               border-bottom: 3px solid rgb(50, 50, 50);
+            }
+         }
+
+         &_button {
+            width: 100%;
+            margin: 0;
+            font-weight: bold;
+            transform: translate(0, 0);
+
+            &:hover {
+               color: rgb(50, 50, 50);
+            }
+         }
+      }
+
+      img {
+         width: 100%;
+      }
+
+      &__illustration {
+         &_number {
+            z-index: 1000000;
+            transform: translate(0px, 0px);
+            width: 30px;
+            height: 30px;
+            font-size: 20px;
+            padding: 17px;
+         }
+
+         &_post {
+            z-index: 100;
+            background: rgb(255, 255, 255);
+            transform: translate(0px, 0px);
+            width: 90%;
+            height: 320px;
+            margin: 0;
+            padding: 20px 10px;
+            color: rgb(50, 50, 50);
+            position: relative;
+
+            &-button {
+               transform: translate(0px, 0px);
+            }
+
+            &-heading {
+               font-size: 26px;
+            }
+
+            &-description {
+               font-size: 14px;
+               letter-spacing: 1px;
+               width: 260px;
+            }
+         }
+
+         &_form {
+            transform: translate(0px, 0px);
+            width: 100%;
+            align-items: center;
+
+            &_input {
+               width: 300px;
+               height: 60px;
+               border: 1px solid black;
+               border-radius: 0px;
+               padding: 15px 10px 15px 30px;
+               margin-top: 10px;
+
+               &_textarea {
+                  height: 150px;
+               }
+
+               &::placeholder {
+                  color: rgb(50, 50, 50);
+                  font-size: 18px;
+               }
+            }
+
+            &_button {
+               padding: 0;
+               margin-left: 240px;
+            }
+         }
+      }
+
+      &__illustration_1 {
+         transform: translateY(80px);
+
+         &_picture {
+            display: none;
+
+            &_mobile {
+               margin: 20px 0 80px 0;
+               display: block;
+               z-index: 10;
+            }
+         }
+
+         &_text {
+            margin-top: 0px;
+            transform: translate(0px, 0px);
+            color: rgb(255, 255, 255);
+
+            &-main {
+               font-size: 46px;
+               letter-spacing: 0.2em;
+               text-transform: uppercase;
+               transform: translate(0px, 0px);
+               width: 200px;
+               margin: -450px 0 0 20px;
+               font-weight: bold;
+            }
+
+            &-secondary {
+               transform: translate(0px, 0px);
+               font-size: 24px;
+               width: 300px;
+               margin: 30px 0 0 20px;
+            }
+         }
+
+         &_post {
+            transform: translate(0, -260px);
+            margin-left: 8%;
+            width: 320px;
+
+            &-button {
+               width: 190px;
+               transform: translate(140px, 50px);
+            }
+         }
+      }
+
+      &__illustration_2 {
+         transform: translate(-25px, 230px);
+
+         &_number {
+            margin: 0;
+            transform: translate(140px, -265px);
+         }
+
+         &_picture {
+            transform: translate(0, 0);
+            height: 265px;
+         }
+
+         &_post {
+            margin: 190px 0 0 17px;
+            width: 300px;
+            padding: 20px 100px 0 20px;
+
+            &-description {
+               width: 170px;
+            }
+
+            &-button {
+               transform: translate(140px, 60px);
+            }
+         }
+      }
+
+      &__illustration_3 {
+         height: 90px;
+
+         &_picture {
+            display: none;
+
+            &_mobile {
+               display: block;
+               transform: translateY(-580px);
+            }
+         }
+
+         &_number {
+            z-index: 10;
+            margin-top: 0;
+            transform: translate(50px, -595px);
+         }
+
+         &_post {
+            margin: -40px 0 0 20px;
+            width: 320px;
+            padding-left: 30px;
+
+            &-heading {
+               width: 50px;
+               line-height: 30px;
+            }
+
+            &-description {
+               width: 90%;
+            }
+         }
+      }
+
+      &__illustration_4 {
+         transform: translate(0px, 0px);
+
+         &_number {
+            transform: translate(250px, -15px);
+         }
+
+         &_picture {
+            transform: translateX(20px);
+         }
+      }
+
+      &__instagram {
+         margin-top: 100px;
+
+         &_text {
+            font-size: 16px;
+            letter-spacing: 1px;
+         }
+
+         &_profile {
+            font-size: 20px;
+         }
+      }
+   }
+}

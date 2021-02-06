@@ -1,0 +1,49 @@
+.imagePostModal {
+   top: 0;
+   position: fixed;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100vw;
+   height: 100vh;
+   z-index: 100000;
+   background: white;
+   overflow: hidden;
+
+   &__close {
+      padding: 0;
+      width: 25px;
+      height: 25px;
+      font-size: 55px;
+      color: rgb(50, 50, 50);
+      transform: rotate(45deg);
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: transparent;
+      cursor: pointer;
+      transition-delay: 0.7s;
+
+      &:hover {
+         transform: rotate(45deg) scale(1.1);
+         transition-delay: 0s;
+      }
+   }
+}
+
+@media screen and (max-width:426px) {
+   .imagePostModal {
+      background: white;
+
+      &__image {
+         width: 100%;
+      }
+
+      &__close {
+         width: 20px;
+         height: 20px;
+         margin-top: 25px;
+         margin-left: 90vw;
+      }
+   }
+}

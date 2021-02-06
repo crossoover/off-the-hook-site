@@ -1,0 +1,33 @@
+.prompt {
+   position: absolute;
+   background: rgb(51, 51, 51);
+   color: white;
+   text-align: center;
+   width: 60px;
+   height: 20px;
+   font-size: 12px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: end;
+   z-index: 100;
+   transform: translate(104px, -43px);
+
+   &__triangle {
+      margin-top: 16px;
+      z-index: 10;
+      width: 9px;
+      height: 9px;
+      background: rgb(51, 51, 51);
+      position: absolute;
+      transform: rotate(45deg);
+      transition: 0.1s;
+   }
+
+   &__active{
+      transition: 0.1s;
+      transform: scale(0);
+      opacity: 0;
+      visibility: hidden;
+   }
+}

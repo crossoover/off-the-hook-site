@@ -1,0 +1,132 @@
+.sighInWrapper {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  z-index: 10000;
+  position: fixed;
+  overflow: hidden;
+}
+.sighInWrapper .sighIn {
+  width: 310px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #323232;
+}
+.sighInWrapper .sighIn .info_text {
+  font-size: 14px;
+  position: absolute;
+  margin: 500px auto;
+  width: 500px;
+}
+.sighInWrapper .sighIn .signIn__close {
+  background: transparent;
+  font-size: 50px;
+  cursor: pointer;
+  transform: translate(700px, -100px) rotate(45deg);
+  transition: 0.3s;
+}
+.sighInWrapper .sighIn .signIn__close:hover {
+  transform: translate(700px, -100px) rotate(135deg) scale(1.3);
+}
+.sighInWrapper .sighIn .signIn__heading {
+  font-size: 48px;
+  margin-bottom: 38px;
+  line-height: 1px;
+}
+.sighInWrapper .sighIn .signIn__member {
+  font-size: 18px;
+  margin-bottom: 50px;
+  display: flex;
+}
+.sighInWrapper .sighIn .signIn__member_link {
+  margin-left: 7px;
+  color: #a6824a;
+  cursor: pointer;
+}
+.sighInWrapper .sighIn .signIn__button {
+  width: 100%;
+  height: 50px;
+  margin: 12px 0;
+  color: white;
+  background: #3b5998;
+  border-radius: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.sighInWrapper .sighIn .signIn__button_image {
+  width: 30px;
+  position: absolute;
+  left: 10px;
+}
+.sighInWrapper .sighIn .signIn__button_image_google {
+  left: 11px;
+  width: 27px;
+}
+.sighInWrapper .sighIn .signIn__button_1:hover {
+  background: #496dbb;
+}
+.sighInWrapper .sighIn .signIn__button_2 {
+  background: #4285f4;
+}
+.sighInWrapper .sighIn .signIn__button_2:hover {
+  background: #71a7ff;
+}
+.sighInWrapper .sighIn .signIn__button_3 {
+  margin-top: 40px;
+  background: transparent;
+  border: 1px solid #8d8d8d;
+  color: #5a5a5a;
+  font-size: 15px;
+}
+.sighInWrapper .sighIn .signIn__line {
+  margin-top: 40px;
+  border-top: 1px solid #8d8d8d;
+  height: 0px;
+  line-height: 1px;
+  width: 100%;
+}
+.sighInWrapper .sighIn .signIn__line_text {
+  background: white;
+  padding: 10px;
+}
+.sighInWrapper .sighIn .signIn__rules {
+  font-size: 14px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sighInWrapper .sighIn .signIn__rules_link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 426px) {
+  .sighInWrapper .sighIn {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+  }
+  .sighInWrapper .sighIn .signIn__close {
+    transform: translate(150px, -90px) rotate(45deg);
+    font-size: 70px;
+    color: #323232;
+  }
+  .sighInWrapper .sighIn .info_text {
+    margin-top: 530px;
+    width: 300px;
+  }
+}
+
+/*# sourceMappingURL=signIn.css.map */

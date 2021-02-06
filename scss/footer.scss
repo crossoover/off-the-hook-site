@@ -1,0 +1,255 @@
+.footer {
+   margin-top: 100px;
+   padding: 0 70px;
+   color: white;
+
+   &__creator-link {
+      color: white;
+      line-height: 1px;
+      transition: 0.1s;
+
+      &:hover &_crossoover {
+         color: rgb(255, 255, 255);
+         animation: pulse-me 0.5s alternate infinite;
+      }
+   }
+
+   &__section {
+      background: rgb(70, 70, 70);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 60px 100px;
+      height: 180px;
+      border: 1px solid white;
+
+      &_text {
+         text-align: center;
+         font-size: 25px;
+         font-weight: bold;
+         width: 250px;
+      }
+
+      &_social {
+         width: 130px;
+         display: flex;
+         justify-content: space-between;
+
+         &_icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 100px;
+
+            &_facebook {
+               &:hover {
+                  animation: colorChangeFacebook 0.5s alternate infinite;
+               }
+            }
+
+            &_youtube {
+               &:hover {
+                  animation: colorChangeYoutube 0.5s alternate infinite;
+               }
+            }
+
+            &_instagram {
+               &:hover {
+                  animation: colorChangeInstagram 0.5s alternate infinite;
+               }
+            }
+
+            &_picture {
+               width: 30px;
+            }
+         }
+      }
+   }
+
+   &__instagram {
+      text-align: center;
+      width: 250px;
+
+      &_text {
+         letter-spacing: 2px;
+         font-weight: 100;
+         font-size: 12px;
+      }
+
+      &_profile {
+         font-size: 25px;
+         font-weight: bold;
+         margin-top: 5px;
+      }
+   }
+
+   .footer__last-row {
+      display: flex;
+   }
+
+   &__section_2,
+   &__section_3,
+   &__section_4 {
+      width: 33.3333%;
+   }
+
+   &__section_2,
+   &__section_4 {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      font-size: 12px;
+      letter-spacing: 1px;
+      line-height: 1px;
+   }
+
+   &__section_2 {
+      padding-left: 180px;
+      padding-right: 20px;
+   }
+
+   &__section_3 {
+      display: flex;
+      flex-direction: column;
+
+      &_link {
+         font-weight: bold;
+         font-size: 18px;
+         line-height: 22px;
+         color: white;
+         text-decoration: none;
+         transition: 0.3s;
+
+         &:hover {
+            color: #a6834a;
+         }
+      }
+   }
+
+   &__section_4 {
+      padding-left: 20px;
+      padding-right: 180px;
+   }
+}
+
+.mobile__footer {
+   display: none;
+}
+
+@keyframes pulse-me {
+   0% {
+      opacity: 0.1;
+   }
+
+   100% {
+      opacity: 1;
+      font-size: 14px;
+   }
+}
+
+@keyframes colorChangeFacebook {
+   0% {
+
+      background: rgb(70, 70, 70);
+   }
+
+   100% {
+      transform: scale(0.9);
+      background: rgb(0, 17, 255);
+   }
+}
+
+@keyframes colorChangeYoutube {
+   0% {
+      background: rgb(70, 70, 70);
+   }
+
+   100% {
+      transform: scale(0.9);
+      background: rgb(255, 0, 0);
+   }
+}
+
+@keyframes colorChangeInstagram {
+   0% {
+      background: rgb(70, 70, 70);
+   }
+
+   100% {
+      transform: scale(0.9);
+      background: rgb(195, 0, 255);
+   }
+}
+
+@media screen and (max-width:426px) {
+   .footer {
+      padding: 0;
+      margin-top: 0;
+
+      &__section {
+         display: none;
+      }
+   }
+
+   .mobile__footer {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      width: 100%;
+      background: red;
+      padding: 0;
+   }
+
+
+   .footer__mobile_section {
+      padding: 40px;
+      width: 100%;
+      background: rgb(70, 70, 70);
+      border: 1px solid white;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+
+      &_1 {
+         &_follow {
+            margin-bottom: 20px;
+            letter-spacing: 0.05em;
+         }
+
+         &_inst {
+            font-size: 22px;
+            font-weight: bold;
+         }
+      }
+
+      &_2 {
+         &_text {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+         }
+
+         &_social {
+            width: 120px;
+            display: flex;
+            justify-content: space-between;
+         }
+      }
+
+      &_3 {
+         .footer__section_3_link {
+            font-size: 21px;
+            margin: 10px;
+         }
+      }
+
+      &_4 {
+         padding: 30px;
+         letter-spacing: 1px;
+
+         .footer__section_4_email {
+            margin-bottom: 20px;
+         }
+      }
+   }
+}

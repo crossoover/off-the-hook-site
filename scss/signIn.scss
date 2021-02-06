@@ -1,0 +1,154 @@
+.sighInWrapper {
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background: #fff;
+   z-index: 10000;
+   position: fixed;
+   overflow: hidden;
+
+   .sighIn {
+      width: 310px;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      color: rgb(50, 50, 50);
+
+      .info_text {
+         font-size: 14px;
+         position: absolute;
+         margin: 500px auto;
+         width: 500px;
+      }
+
+      .signIn__close {
+         background: transparent;
+         font-size: 50px;
+         cursor: pointer;
+         transform: translate(700px, -100px) rotate(45deg);
+         transition: 0.3s;
+
+         &:hover {
+            transform: translate(700px, -100px) rotate(135deg) scale(1.3);
+         }
+      }
+
+      .signIn__heading {
+         font-size: 48px;
+         margin-bottom: 38px;
+         line-height: 1px;
+      }
+
+      .signIn__member {
+         font-size: 18px;
+         margin-bottom: 50px;
+         display: flex;
+
+         &_link {
+            margin-left: 7px;
+            color: rgb(166, 130, 74);
+            cursor: pointer;
+         }
+      }
+
+      .signIn__button {
+         width: 100%;
+         height: 50px;
+         margin: 12px 0;
+         color: white;
+         background: rgb(59, 89, 152);
+         border-radius: 1px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         cursor: pointer;
+         transition: 0.1s;
+
+         &_image {
+            width: 30px;
+            position: absolute;
+            left: 10px;
+
+            &_google {
+               left: 11px;
+               width: 27px;
+            }
+         }
+
+         &_1 {
+            &:hover {
+               background: rgb(73, 109, 187);
+            }
+         }
+
+         &_2 {
+            background: rgb(66, 133, 244);
+
+            &:hover {
+               background: rgb(113, 167, 255);
+            }
+         }
+
+         &_3 {
+            margin-top: 40px;
+            background: transparent;
+            border: 1px solid rgb(141, 141, 141);
+            color: rgb(90, 90, 90);
+            font-size: 15px;
+         }
+      }
+
+      .signIn__line {
+         margin-top: 40px;
+         border-top: 1px solid rgb(141, 141, 141);
+         height: 0px;
+         line-height: 1px;
+         width: 100%;
+
+         &_text {
+            background: white;
+            padding: 10px;
+         }
+      }
+
+      .signIn__rules {
+         font-size: 14px;
+         margin-top: 20px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+
+         &_link {
+            text-decoration: underline;
+            cursor: pointer;
+         }
+      }
+   }
+}
+
+@media screen and (max-width:426px) {
+   .sighInWrapper {
+      .sighIn {
+         top: 30%;
+         left: 50%;
+         transform: translate(-50%, -30%);
+
+         .signIn__close {
+            transform: translate(150px, -90px) rotate(45deg);
+            font-size: 70px;
+            color: rgb(50, 50, 50);
+         }
+
+         .info_text {
+            margin-top: 530px;
+            width: 300px;
+         }
+      }
+   }
+}
